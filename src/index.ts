@@ -20,3 +20,15 @@ const titles = todos.map((todo) => {
 });
 
 console.log(titles);
+
+
+const completedBefore = todos.filter((todo) => todo.completed).length;
+for (const todo of todos) {
+  if (todo.id === 2) {
+    todo.completed = true;
+    console.log(`更新後: ${todo.title} [完了]`);
+  }
+}
+
+const completedAfter = todos.filter((todo) => todo.completed).length;
+console.log(`完了件数: 更新前 ${completedBefore}件 -> 更新後 ${completedAfter}件`);
