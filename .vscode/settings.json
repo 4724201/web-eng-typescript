@@ -1,0 +1,4 @@
+{
+    "js/ts.validate.enabled": true,
+    "js/ts.tsdk.path": "node_modules/typescript/lib"
+}
