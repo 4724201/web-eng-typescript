@@ -5,7 +5,6 @@ const todos = [
   { id: 4, title: "課題を提出する", completed: false },
 ];
 
-console.log("【更新前のTODO一覧】");
 
 for (const todo of todos) {
   const status = todo.completed ? "完了" : "未完了";
@@ -14,7 +13,6 @@ for (const todo of todos) {
 
 const completedBefore = todos.filter((todo) => todo.completed).length;
 
-console.log("\n【更新したTODO】");
 
 for (const todo of todos) {
   if (todo.completed === false) {
@@ -25,15 +23,8 @@ for (const todo of todos) {
 
 const completedAfter = todos.filter((todo) => todo.completed).length;
 
-console.log(
-  "完了件数: 更新前 " +
-    completedBefore +
-    "件 -> 更新後 " +
-    completedAfter +
-    "件"
-);
+console.log("完了件数: 更新前 " +completedBefore + "件 -> 更新後 " +completedAfter + "件");
 
-console.log("\n【更新後のTODO一覧】");
 
 for (const todo of todos) {
   const status = todo.completed ? "完了" : "未完了";
